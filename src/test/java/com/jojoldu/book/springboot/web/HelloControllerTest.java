@@ -41,7 +41,7 @@ public class HelloControllerTest {
                 .andExpect(content().string(hello)); // 응답 본문의 내용을 검증, Controller에서 "hello"를 리턴하기 때문에 이 값이 맞는지 아닌지 검증
     }
 
-    @Test
+    @Test //
     public void helloDto가_리턴된다() throws Exception {
         String name = "hello";
         int amount = 1000;
@@ -59,5 +59,6 @@ public class HelloControllerTest {
                 .andExpect(jsonPath("$.name", is(name)))
                 .andExpect(jsonPath("$.amount", is(amount)));
     }
+    //
 
 }
