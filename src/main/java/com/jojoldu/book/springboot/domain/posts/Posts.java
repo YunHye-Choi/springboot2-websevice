@@ -32,4 +32,9 @@ public class Posts { // 실제 DB테이블과 매칭될 클래스 (Entity 클래
         this.content = content;
         this.author = author;
     }
+
+    public void update (String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
 }
